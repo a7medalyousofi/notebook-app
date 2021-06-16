@@ -3,7 +3,7 @@ import Header from "./component/Header";
 
 function App() {
 	return (
-		<div className="container mx-auto text-center">
+		<div className="container mx-auto">
 			<Header />
 			<TodoList />
 		</div>
