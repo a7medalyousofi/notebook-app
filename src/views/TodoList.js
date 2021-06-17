@@ -2,34 +2,6 @@ import React, { useState } from "react";
 import Todos from "../component/todos/Todos";
 import TodosForm from "./../component/todos/TodosForm";
 const TodoList = () => {
-	// const allNotes = [
-	// 	{
-	// 		id: 1,
-	// 		title: "Learn OOP",
-	// 		description:
-	// 			"this is a description this is a description  this is a description this is a description this is a description this is a description this is a description this is a description this is a description this is a description.",
-	// 		isCompleted: false,
-	// 	},
-	// 	{
-	// 		id: 2,
-	// 		title: "Learn OOP",
-	// 		description: "this is a description",
-	// 		isCompleted: true,
-	// 	},
-	// 	{
-	// 		id: 3,
-	// 		title: "Learn React",
-	// 		description: "this is a description",
-	// 		isCompleted: false,
-	// 	},
-	// 	{
-	// 		id: 4,
-	// 		title: "Practice",
-	// 		description: "this is a description",
-	// 		isCompleted: true,
-	// 	},
-	// ];
-
 	const allNotes = localStorage.getItem("localStorageTodos")
 		? JSON.parse(localStorage.getItem("localStorageTodos"))
 		: [];
@@ -106,7 +78,7 @@ const TodoList = () => {
 	}
 
 	return (
-		<div className="container max-w-4xl mx-auto bg-gray-100 space-y-4 p-4">
+		<div className="container mx-auto space-y-4 p-4">
 			<TodosForm
 				addHandler={addHandler}
 				filterUncompletedTask={filterUncompletedTask}
