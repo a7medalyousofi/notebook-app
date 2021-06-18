@@ -51,7 +51,7 @@ const TodosForm = (props) => {
 				<input
 					type="text"
 					value={newtTitle}
-					maxlength="30"
+					maxLength="30"
 					className="px-4 focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm text-sm border-gray-300 rounded-md"
 					placeholder="Type note title..."
 					onChange={newTitleHandler}
